@@ -1,0 +1,87 @@
+/* Imports */
+
+@import url("ZeroingOut.css");
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap');
+
+/* Settings */
+
+body {
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.wrapper {
+    min-height: 100vh;
+    width: 100%;
+    background: #404040;
+}
+
+.container {
+    max-width: 1260px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/* Code */
+
+.ping-pong {
+    height: 100vh;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ping-pong__container {
+    flex-direction: column;
+}
+
+.ping-pong__canvas {
+    width: 1200px;
+    height: 400px;
+    background: #303030;
+}
+
+.ping-pong__player-control {
+    flex-direction: column;
+}
+
+.ping-pong__control {
+    margin-top: 40px;
+}
+
+.ping-pong__control > *:not(:last-child) {
+    margin-right: 40px;
+}
+
+.ping-pong__name {
+    font-size: 20px;
+    color: white;
+}
+
+.ping-pong__buttons {
+    margin-top: 20px;
+}
+
+.ping-pong__buttons > *:not(:last-child) {
+    margin-right: 20px;
+}
+
+.ping-pong__control-btn {
+    background: #202020;
+    color: white;
+    font-family: "Montserrat";
+    font-size: 20px;
+    padding: 10px 17px;
+    transition: .2s;
+}
+
+.ping-pong__control-btn:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
